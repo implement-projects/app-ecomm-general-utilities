@@ -5,7 +5,9 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "General.Utility.CQRS", "General.Utility.CQRS\General.Utility.CQRS.csproj", "{3575037E-9D8D-4293-92C5-AF16FEF1ECA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "General.Utility.Logger", "General.Utility.Logger\General.Utility.Logger.csproj", "{D9E4EF27-69D5-4A2D-ADFC-7E48ADDF168E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "General.Utility.Logger", "General.Utility.Logger\General.Utility.Logger.csproj", "{D9E4EF27-69D5-4A2D-ADFC-7E48ADDF168E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "General.Utility.Test", "General.Utility.Test\General.Utility.Test.csproj", "{93B6F10E-A38A-431C-AEB1-42FBC8F876BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D9E4EF27-69D5-4A2D-ADFC-7E48ADDF168E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9E4EF27-69D5-4A2D-ADFC-7E48ADDF168E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9E4EF27-69D5-4A2D-ADFC-7E48ADDF168E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93B6F10E-A38A-431C-AEB1-42FBC8F876BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93B6F10E-A38A-431C-AEB1-42FBC8F876BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93B6F10E-A38A-431C-AEB1-42FBC8F876BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93B6F10E-A38A-431C-AEB1-42FBC8F876BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

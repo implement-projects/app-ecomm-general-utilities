@@ -1,7 +1,8 @@
 ﻿namespace General.Utility.CQRS.Dispatcher;
 
-public interface IQueryDispatcher
+public interface IQueryDispatcher    
 {
-    Task<TResponse> DispatchAsync<TQuery, TResponse>(TQuery query, CancellationToken cancellationToken = default)
-        where TQuery : IQuery<TResponse>;
+    Task<TResponse> QueryAsync<TQuery, TResponse>(TQuery query, CancellationToken cancellationToken = default)
+        where TQuery : IQuery<TResponse>
+        where TResponse : notnull;
 }
