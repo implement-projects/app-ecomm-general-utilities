@@ -1,3 +1,5 @@
 ﻿namespace General.Utility.CQRS.Interfaces.Queries;
 
-public interface IQuery<TResponse> { }
+public interface IQuery<out TResponse>
+    where TResponse : notnull
+{ }

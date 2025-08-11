@@ -1,7 +1,11 @@
 ﻿namespace General.Utility.CQRS.Dispatcher;
 
-public interface ICommandDispatcher
+public interface ICommandDispatcher    
 {
-    Task DispatchAsync<TCommand>(TCommand command, CancellationToken cancellationToken = default)
+    Task SendAsync<TCommand>(TCommand command, CancellationToken cancellationToken = default) 
         where TCommand : ICommand;
+
+    Task<TResponse> SendAsync<TCommand, TResponse>(TCommand command, CancellationToken cancellationToken = default)
+        where TCommand : ICommand<TResponse>
+        where TResponse : notnull;
 }
